@@ -11,6 +11,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 
+
+ 
+
+  
+
+ 
+
   <title>Pagina Jquery</title>
 
   <script>
@@ -28,6 +35,15 @@
             $(".services").hide();
         }
       })
+
+      $("button").click(function() {
+        if ( $(".promo" ).is( ":hidden" ) ) {
+            $( "div" ).show( "slow" );
+        } 
+        else {
+            $( "div" ).slideUp();
+        }
+      });
 
 
 
@@ -75,12 +91,28 @@
       <li><a href="#">MARKETING</a></li>
       <li><a href="#">DATA SIENCE</a></li>
     </ul>
-
-
-
   </div>
 
   <!--HERO SECTION-->
+  <section>
+    <button>APP PROMO</button>
+    <div class="promo">
+      <p>FOR A LIMITED TIME, I CAN CREATE AN APPLICATION AT HALF THE PRICE. YOUR BUSSINESS WILL THANK YOU!
+      </p>
+      
+      <input type="email" placeholder="Let us your number"></input>
+      <input type="submit" id="enviar"></input>
+    </div>
+  </section>
+
+   <!--Jumbotron-->
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </div>
 
 
   
