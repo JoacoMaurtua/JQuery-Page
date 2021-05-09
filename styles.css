@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  /*outline: 1px solid red;*/
 }
 
 body{
@@ -155,7 +156,7 @@ section button{
   color: white;
   margin-left: 140px;
   margin-top: 30px;
-  border: 1px solid white;
+  border: 3px solid white;
   position: absolute;
   
 }
@@ -186,4 +187,145 @@ section .promo{
   padding: 5px;
   color: white;
   border: 1px solid white;
+}
+.lastWork{
+  height: 270px;
+  width: 250px;
+  background: rgb(36, 153, 173);
+  margin-top: 50px;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 120px;
+  color: white;
+  border-radius: 10px;
+}
+
+section .lastWork img{
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+section #butLast{
+  float: left;
+  background: linear-gradient(rgb(240, 112, 8),rgb(245, 146, 33),rgb(243, 184, 76));
+  margin-top: 280px;
+  margin-left: -215px;
+}
+
+#desvanecete{
+  color: white;
+  display: inline-block;
+  /*width: 400px;*/
+  text-align: center;
+  margin-top: -586px;
+  margin-left: 580px;
+  vertical-align: top;
+}
+#desvanecete #parrafo{
+  position: relative;
+  width: 400px;
+  height: 90px;
+ 
+}
+
+#desvanecete a{
+  text-decoration: none;
+  color: aquamarine;
+}
+
+#desvanecete span{
+  display: none;
+
+}
+
+#desvanecete #cuadrado{
+  position: absolute;
+  width: 600px;
+  height: 80px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: rgb(56, 209, 236);
+  padding-top: 18px;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.title{
+  color: rgb(255, 208, 52);;
+}
+
+.Garden{
+  width: 100%;
+  background: rgb(56, 209, 236);
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.Garden h1{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.Garden p{
+  width: 500px;
+  margin: 0 auto;
+ 
+}
+
+.Garden .personaje{
+  width: 250px;
+  height: 100px;
+  background: rgb(0, 55, 71);
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+  margin-right: 200px;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Garden .personaje button{
+  margin: 0px 0px 0px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  background: linear-gradient(rgb(18, 170, 18),rgb(4, 128, 35),rgb(2, 105, 11));
+  color: white;
+}
+
+#Anakyn{
+  margin-left: 150px;
+}
+
+#Anakyn .befA{
+  margin: 8px 15px 0px -5px;
+}
+
+#SonGoku .befG{
+  margin: 8px 22px 0px 31px;
+}
+
+#SonGoku .afterG{
+  margin: 8px 18px 0px -6px
+}
+
+#Optimus .befO{
+  margin: 8px 18px 0px 0px;
+}
+
+.Garden img{
+  height: 150px;
+  width: 120px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.Garden a{
+  color: black;
 }

@@ -6,17 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
-
-
- 
-
-  
-
- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://raw.githubusercontent.com/wilq32/jqueryrotate/master/jQueryRotate.js"></script>
+  <script src="https://kit.fontawesome.com/26beac1ff1.js" crossorigin="anonymous"></script>
 
   <title>Pagina Jquery</title>
 
@@ -36,14 +28,76 @@
         }
       })
 
-      $("button").click(function() {
+      $("#butPromo").click(function() {
         if ( $(".promo" ).is( ":hidden" ) ) {
-            $( "div" ).show( "slow" );
+              $( ".promo" ).show( "slow" );
         } 
         else {
-            $( "div" ).slideUp();
+            $( ".promo" ).slideUp();
         }
       });
+
+      $("#butLast").click(function(){
+       
+          $(".lastWork").slideToggle();
+        
+      });
+
+      $("#link").click(function(){
+        $("#cuadrado").fadeIn( 3000, function(){
+          $("span").fadeIn(100);
+        });
+        return false;
+      });
+
+
+      $("span").click(function(){
+        $("#cuadrado").fadeOut( 3000, function(){
+          $("span").fadeOut(100);
+        });
+        return false;
+      });
+
+      $("h1").click(function(){
+        $(this).addClass("title");
+      });
+
+      //ANAKYN
+      $(".befA").click(function(){
+        $("#Anakyn").before("<img src = 'images/child.jpg'></img>")
+      });
+
+      $(".afterA").click(function(){
+        $("#Anakyn").after("<img src = 'images/vader.jpg'></img>")
+      });
+
+      //GOKU
+      $(".befG").click(function(){
+        $("#SonGoku").before("<img src = 'images/gokuchild.png'></img>")
+      });
+
+      $(".afterG").click(function(){
+        $("#SonGoku").after("<img src = 'images/gokublue.jpg'></img>")
+      });
+
+      //OPTIMUS
+      $(".befO").click(function(){
+        $("#Optimus").before("<img src = 'images/truck.jpg'></img>")
+      });
+
+      $(".afterO").click(function(){
+        $("#Optimus").after("<img src = 'images/optimus.jpg'></img>")
+      });
+
+      $("#why").click(function(){
+        $("#gardentitle").append("<b>'Just for fun'</b>.")
+      });
+      
+      
+
+      
+
+            
 
 
 
@@ -95,26 +149,54 @@
 
   <!--HERO SECTION-->
   <section>
-    <button>APP PROMO</button>
+    <button id="butPromo">APP PROMO</button>
     <div class="promo">
       <p>FOR A LIMITED TIME, I CAN CREATE AN APPLICATION AT HALF THE PRICE. YOUR BUSSINESS WILL THANK YOU!
       </p>
-      
       <input type="email" placeholder="Let us your number"></input>
       <input type="submit" id="enviar"></input>
     </div>
+
+    <button id="butLast">LOOK AT IT</button>
+
+    <div class="lastWork">
+      <h1>This is my last work</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <img src="images/imgpost.png" id="imgPost">
+    </div>
+
+    <div id="desvanecete">
+      <h1>Who I am?</h1>
+      <p id="parrafo">
+        I am a funny guy, although quite crazy, I like to give life to things and solve the problems of others, I am a funny guy, although quite crazy, I like to give life to things and solve the problems of others...(<a href="#" id="link">click!</a>)
+        <div id="cuadrado"><span>WELCOME TO MY WORLD!</span></div>
+      </p>
+    </div>
+
+   
   </section>
 
-   <!--Jumbotron-->
-  <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+   <!--GAMES GARDEN-->
+  <div class="Garden">
+    <h1 id="gardentitle">This is a JQUERY Game</h1>
+    <p>Next you will have panels with the names of characters that had a before and after, 
+      select which version of the character is the one you want this page to show you.
+      <a href="#" id="why"><b>WHY?</b></a>
+    </p>
+    <div id="Anakyn" class="personaje">Anakyn Skywalker
+      <button class="befA">Before</button> <button class="afterA">After</button>
+    </div>
+    
+    <div id="SonGoku" class="personaje">Son Goku
+      <button class="befG">Before</button> <button class="afterG">After</button>
+    </div>
+    <div id="Optimus" class="personaje">Optimus Prime
+      <button class="befO">Before</button> <button class="afterO">After</button>
+    </div>
   </div>
 
 
-  
+ 
 </body>
 </html>
