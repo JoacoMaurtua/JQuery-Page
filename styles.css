@@ -202,8 +202,8 @@ section .promo{
 }
 
 section .lastWork img{
-  width: 150px;
-  height: 150px;
+  /* width: 150px;
+  height: 150px; */
   margin-top: 10px;
 }
 section #butLast{
@@ -252,6 +252,12 @@ section #butLast{
   top: 0;
   left: 0;
   display: none;
+}
+
+#butAlert{
+  background: linear-gradient(rgb(209, 7, 0),rgb(233, 16, 16),rgb(253, 88, 66));
+  margin-left: -830px;
+  
 }
 
 .title{

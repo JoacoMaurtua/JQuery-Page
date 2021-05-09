@@ -38,9 +38,7 @@
       });
 
       $("#butLast").click(function(){
-       
-          $(".lastWork").slideToggle();
-        
+            $( ".lastWork").slideToggle();
       });
 
       $("#link").click(function(){
@@ -96,26 +94,25 @@
       $("#feedb").click(function(){
         alert($("p").html());
       });
+
+     /* $("#imgPost").click(function(){
+        (this).attr({width: "350", height: "350"});
+      });*/
       
+      $("#imgPost").click(function(){
+         alert("Image width: " + $(this).attr("width"));
+      });
       
+      $("#butAlert").click(function(){
+        $("h1").text("Change is the only permanent thing");
+      });
 
-      
-
-            
-
-
-
-
-
+      $("#enviar").click(function(){
+        $("#entrada").val("Joaquin Maurtua");
+      });
 
 
-
-
-
-
-
-
-    });
+  });
 
   </script>
 
@@ -157,7 +154,7 @@
     <div class="promo">
       <p>FOR A LIMITED TIME, I CAN CREATE AN APPLICATION AT HALF THE PRICE. YOUR BUSSINESS WILL THANK YOU!
       </p>
-      <input type="email" placeholder="Let us your number"></input>
+      <input type="email" placeholder="Let us your number" id="entrada"></input>
       <input type="submit" id="enviar"></input>
     </div>
 
@@ -166,7 +163,7 @@
     <div class="lastWork">
       <h1>This is my last work</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-      <img src="images/imgpost.png" id="imgPost">
+      <img src="images/imgpost.png" id="imgPost" width="150" height="150">
     </div>
 
     <div id="desvanecete">
@@ -176,6 +173,8 @@
         <div id="cuadrado"><span>WELCOME TO MY WORLD!</span></div>
       </p>
     </div>
+
+    <button id="butAlert">DANGER</button>
 
    
   </section>
